@@ -9,7 +9,7 @@ def get_first_column(data):
     aw = []
     csv_data = data.split("\n")
     for i in csv_data:
-        aw.append(i.split(",")[0])
+        aw.append(i.split(",")[1])
     return aw
 
 
