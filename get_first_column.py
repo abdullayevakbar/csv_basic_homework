@@ -9,7 +9,7 @@ def get_first_column(data):
     Return:
         list: First column.
     """
-
+    data = data.split('\n')
     x: list = []
     for i in data:
         x.append(i.split(',')[0])
@@ -17,6 +17,6 @@ def get_first_column(data):
 
 
 data = open('data.csv').read()
-data = data.split('\n')
+
 print(get_first_column(data))
 # Read the csv file
