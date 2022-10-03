@@ -12,7 +12,7 @@ def get_first_column(data):
     data = data.split('\n')
     x: list = []
     for i in data:
-        x.append(i.split(',')[1])
+        x.append(i.split(',')[0])
     return x
 
 

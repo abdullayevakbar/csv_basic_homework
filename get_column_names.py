@@ -1,7 +1,3 @@
-# Define function,Get coloumn names from a csv file
-from webbrowser import get
-
-
 def get_column_names(data):
     """ 
     Get column names from a csv file
