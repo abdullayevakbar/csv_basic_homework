@@ -1,3 +1,6 @@
+from webbrowser import get
+
+
 def get_first_column(data):
     """
     Get the first column from a CSV file.
@@ -6,6 +9,13 @@ def get_first_column(data):
     Return:
         list: First column.
     """
-    return
-    
+    data = data.split('\n')
+    x: list = []
+    for i in data:
+        x.append(i.split(',')[1])
+    return x
+
+
+data = open('data.csv').read()
+print(get_first_column(data))
 # Read the csv file
