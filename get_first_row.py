@@ -6,7 +6,7 @@ def get_first_row(data):
      Return:
          list: First row.
     """
-    data.split('\n')
+    data = data.split('\n')
     return data[1].split(',')
 
 

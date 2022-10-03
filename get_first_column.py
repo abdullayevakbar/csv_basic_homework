@@ -1,6 +1,3 @@
-from webbrowser import get
-
-
 def get_first_column(data):
     """
     Get the first column from a CSV file.
