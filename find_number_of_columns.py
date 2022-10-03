@@ -6,11 +6,10 @@ def find_number_of_columns(data):
     Return:
         int: Number of columns.
     """
-
-    return len(data.split(','))
+    data = data.split('\n')[0].split(',')
+    return len(data)
 
 
 data = open('data.csv').read()
-y = data.split('\n')
-print(find_number_of_columns(y[0]))
+print(find_number_of_columns(data))
 # Read the csv file
