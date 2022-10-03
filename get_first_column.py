@@ -9,10 +9,10 @@ def get_first_column(data):
     aw = []
     csv_data = data.split("\n")
     for i in csv_data:
-        aw.append(i.split(",")[1])
+        aw.append(i.split(",")[0])
     return aw
 
 
 # Read the csv file
-data = open('data.csv').read()
-print(get_first_column(data))
+f = open('data.csv').read()
+print(get_first_column(f))
