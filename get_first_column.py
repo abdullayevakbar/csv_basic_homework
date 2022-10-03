@@ -13,6 +13,6 @@ def get_first_column(data):
     return x
 
 
+# Read the csv file
 data = open('data.csv').read()
 print(get_first_column(data))
-# Read the csv file
